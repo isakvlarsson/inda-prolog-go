@@ -6,3 +6,7 @@ If two stones share an adjacent stone of the same color they are considered to b
 A group is alive if it has atleast one liberty. A liberty is a horisontally or vertically adjacent spot on the board that isn't covered by another stone. A stone at the edge of the board is considered to have one less liberty. Coversely, a stone at the corner of the board is considered to have two less liberties. 
 
 The function only needs to be able to handle boards of size 9x9, but it would be nice if it could handle bigger (or smaller) board sizes.
+
+The file 'template.pl' contains a template for how to read input and a simple predicate that checks the position at (Column, Row) and returns true if it contains a stone.
+
+There are two example boards that you can test your solution on.
