@@ -1,6 +1,6 @@
 % An example 9x9 board where 
 % the white group in the middle is alive
-% This is a Prolog-term 
+% This is a valid Prolog-term 
 [[e, e, e, e, e, e, e, e, e],
 [e, e, e, e, e, e, e, e, e],
 [e, e, e, e, b, b, e, e, e],

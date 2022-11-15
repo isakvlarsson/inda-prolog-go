@@ -5,16 +5,14 @@ nth1_2d(Row, Column, List, Element) :-
     nth1(Row, List, SubList),
     nth1(Column, SubList, Element).
 
-
-% Top-level predicate
-alive(Row, Column, BoardFileName):-
+% Reads a file and retrieves the Board from it.
+load_board(BoardFileName, Board):-
     see(BoardFileName),     % Loads the input-file
     read(Board),            % Reads the first Prolog-term from the file
-    seen,                   % Closes the io-stream
-    check_alive(Row, Column, Board).
+    seen.                   % Closes the io-stream
 
 % Checks whether the group of stones connected to
 % the stone located at (Row, Column) is alive or dead.
 check_alive(Row, Column, Board):-
     nth1_2d(Row, Column, Board, Stone),
-    (Stone = b; Stone = w).
+    (Stone = b; Stone = w). % Example statement so that the function returns. Substitute this with your own logic
