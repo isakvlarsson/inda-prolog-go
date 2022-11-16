@@ -66,7 +66,7 @@ I.e `place_stone(X, Y, Color, Board, New_Board):-` or similar.
 
 Implement a predicate that determines all possible moves, given a color and a board. The function should take a color and a board, and bind the possible moves to the third variable.
 
-I.e `possible_move(Color, Board, Move):-` 
+I.e `possible_move(Color, Board, Move):-` or similar
 
 > Note: The return-variable `Move` can either be a list of moves, or you can make use of Prolog's language features and make the function return several times. 
 
